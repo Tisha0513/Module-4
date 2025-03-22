@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Javascript functions</title>
+</head>
+<body>
+    <h1>Basic Function</h1>
+    <button onclick="myfunction(12,9)">Execute JavaScript Function</button>
+    <h1>Scope of Function</h1>
+    <button onclick="multiplication ()">Click me</button>
+    <p id="demo"></p>
+    <h1>Expression of Function</h1>
+    <script>
+function myfunction(a,b) {
+    document.write(a+b)
+}
+var c = 6; //global variable
+function multiplication() {
+    var d = 7; //local variable
+    document.getElementById(demo).innerHTML = c * d;
+}
+var result = function (c,d) {
+    return c*d
+}
+document.write(result(6,7))
+    </script>
+</body>
+</html>
