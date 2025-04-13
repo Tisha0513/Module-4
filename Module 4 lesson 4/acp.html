@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>The sum of arguments and Math objects</p>
+        <p id="demo"></p>
+        <script>
+            function sumAll() {
+                var sum = 1;
+                for (i = 1; i < arguments.length; i++) {
+                    sum += arguments[i];
+                }
+                return sum;
+            }
+            document.getElementById("demo").innerHTML = sumAll (1, 600, 200, 354, 20, 35);
+            var value = Math.sin(35);
+            document.write("Sin 35 is : " + value + "<br>");
+            var value1 = Math.cos(35);
+            document.write("Cos 35 is : " + value1 +"<br>")
+            var value2 = Math.tan(35);
+            document.write("Tan 35 is : " + value2 + "<br>")
+        </script>
+    </body>
+</html>
